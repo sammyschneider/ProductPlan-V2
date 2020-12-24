@@ -1,0 +1,17 @@
+.tutorial-popover {
+  position: relative;
+  .popover-close-icon {
+    position: absolute;
+    top: -18px;
+    right: -15px;
+    cursor: pointer;
+  }
+  .primary-button {
+    float: right;
+  }
+  &::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}

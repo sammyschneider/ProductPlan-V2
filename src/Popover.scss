@@ -1,0 +1,60 @@
+.popover-content {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  background: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 400px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.popper {
+  z-index: 3;
+  position: absolute;
+}
+
+$arrow-size: 12.5px;
+
+.popper .popper__arrow {
+  position: absolute;
+  margin: $arrow-size;
+}
+
+.popper[x-placement^="left"] {
+  margin-right: $arrow-size;
+}
+
+.popper[x-placement^="left"] .popper__arrow {
+  right: -$arrow-size;
+  top: calc(50% - #{$arrow-size});
+  margin-left: 0;
+  margin-right: 0;
+}
+.popper[x-placement^="top"] {
+  margin-bottom: $arrow-size;
+}
+.popper[x-placement^="top"] .popper__arrow {
+  bottom: -$arrow-size;
+  left: calc(50% - #{$arrow-size});
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.popper[x-placement^="bottom"] {
+  margin-top: $arrow-size;
+}
+.popper[x-placement^="bottom"] .popper__arrow {
+  top: -$arrow-size;
+  left: calc(50% - #{$arrow-size});
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.popper[x-placement^="right"] {
+  margin-left: $arrow-size;
+}
+
+.popper[x-placement^="right"] .popper__arrow {
+  left: -$arrow-size;
+  top: calc(50% - #{$arrow-size});
+  margin-left: 0;
+  margin-right: 0;
+}

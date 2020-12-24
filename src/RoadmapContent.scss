@@ -1,0 +1,9 @@
+@import "./Constants.scss";
+
+.roadmap-content {
+  background: $gray;
+  grid-area: roadmap-content;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+}

@@ -1,0 +1,14 @@
+.primary-button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 6px 12px;
+  min-width: 100px;
+  cursor: pointer;
+  color: white;
+  background: #2175b8;
+  border-radius: 4px;
+  border: 0;
+  &:hover {
+    background: #286090;
+  }
+}

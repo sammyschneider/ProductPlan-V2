@@ -1,0 +1,13 @@
+.bar {
+  position: absolute;
+  top: 5px;
+  background: #2175b8;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: move;
+  box-sizing: border-box;
+}

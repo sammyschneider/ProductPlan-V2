@@ -1,0 +1,26 @@
+@import "./Constants.scss";
+
+.roadmap-heading {
+  grid-area: roadmap-heading;
+  border-bottom: 1px solid $border-color;
+  padding: 8px 34px;
+  position: relative;
+  h2 {
+    font-size: 30px;
+  }
+  .roadmap-tabs {
+    position: absolute;
+    // Make sure the border hangs over the content pane
+    z-index: 2;
+    bottom: -3px;
+    right: $sidebar-width;
+    .tab {
+      display: inline-block;
+      padding: 0.5em 1em;
+      cursor: pointer;
+      &.active {
+        border-bottom: 3px solid rgb(25, 115, 186);
+      }
+    }
+  }
+}

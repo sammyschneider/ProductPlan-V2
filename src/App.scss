@@ -1,0 +1,24 @@
+@import "./Constants.scss";
+
+@font-face {
+  font-family: "Radomir-Tinkov-Gilroy";
+  src: url(./fonts/Radomir-Tinkov-Gilroy-Medium.otf),
+    url(./fonts/Radomir-Tinkov-Gilroy-Bold.otf);
+}
+
+body {
+  font-family: "Radomir-Tinkov-Gilroy";
+  font-size: 14px;
+  color: $text-color;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: auto $sidebar-width;
+  grid-template-rows: $header-height $roadmap-heading-height auto;
+  grid-template-areas:
+    "header header"
+    "roadmap-heading roadmap-heading"
+    "roadmap-content roadmap-sidebar";
+  min-height: 100vh;
+}

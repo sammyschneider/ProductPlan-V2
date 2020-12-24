@@ -1,0 +1,17 @@
+.axis {
+  position: relative;
+  height: 65px;
+  user-select: none;
+  .axis-month {
+    position: absolute;
+    top: 15px;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    .dot {
+      position: absolute;
+      top: 20px;
+      opacity: 0.5;
+    }
+  }
+}

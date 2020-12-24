@@ -1,0 +1,15 @@
+.lane-dropzone {
+  height: 84px;
+  line-height: 84px;
+  opacity: 0;
+  background: white;
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+  text-align: center;
+  &.canDrop {
+    transition: opacity 0.25s linear;
+    opacity: 0.8;
+  }
+  &.isOver {
+    background: rgba(0, 0, 0, 0.01);
+  }
+}

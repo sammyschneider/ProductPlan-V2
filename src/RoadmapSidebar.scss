@@ -1,0 +1,8 @@
+@import "./Constants.scss";
+
+.roadmap-sidebar {
+  grid-area: roadmap-sidebar;
+  border-left: 1px solid $border-color;
+  padding-top: 7px;
+  position: relative;
+}
